@@ -1,0 +1,41 @@
+﻿@model IEnumerable<EnergyMonitor.Models.Reading>
+@{
+    ViewBag.Title = "Dashboard Energético";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Panel de Consumo Energético</h2>
+
+<canvas id="chart" height="120"></canvas>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Fecha</th>
+        <th>Potencia (W)</th>
+        <th>kWh Total</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CreatedAt</td>
+            <td>@item.Watts</td>
+            <td>@item.KwhTotal</td>
+        </tr>
+    }
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('chart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.CreatedAt))),
+            datasets: [{
+                label: 'Consumo (W)',
+                data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.Watts))),
+                borderColor: 'rgba(54, 162, 235, 1)',
+                fill: false
+            }]
+        }
+    });
+</script>
