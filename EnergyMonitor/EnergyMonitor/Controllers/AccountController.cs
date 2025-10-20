@@ -1,17 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace EnergyMonitor.Controllers
 {
     public class AccountController : Controller
     {
-        // GET: Account
-        public ActionResult Index()
+        public ActionResult Login() => View();
+
+        [HttpPost]
+        public ActionResult Login(string user, string pass)
         {
+            if (user == "admin" && pass == "admin")
+            {
+                Session["user"] = "admin";
+                return RedirectToAction("Index", "Dashboard");
+            }
+            ViewBag.Error = "Credenciales inválidas";
             return View();
+        }
+
+        public ActionResult Logout()
+        {
+            Session.Abandon();
+            return RedirectToAction("Login");
         }
     }
 }

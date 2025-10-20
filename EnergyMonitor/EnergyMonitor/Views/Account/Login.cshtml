@@ -1,0 +1,10 @@
+﻿@{ ViewBag.Title = "Login"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+<h3>Iniciar Sesión</h3>
+@if (ViewBag.Error != null)
+{<div class="alert alert-danger">@ViewBag.Error</div>}
+@using (Html.BeginForm())
+{
+    <div class="mb-2"><label>Usuario</label><input name="user" class="form-control" /></div>
+    <div class="mb-3"><label>Contraseña</label><input type="password" name="pass" class="form-control" /></div>
+    <button class="btn btn-primary">Entrar</button>
+}

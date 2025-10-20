@@ -1,41 +1,183 @@
-﻿@model IEnumerable<EnergyMonitor.Models.Reading>
+﻿@model EnergyMonitor.Models.ViewModels.DashboardViewModel
 @{
-    ViewBag.Title = "Dashboard Energético";
+    ViewBag.Title = "Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var devId = Model.CurrentDeviceId ?? 0;
 }
-<h2>Panel de Consumo Energético</h2>
+<div class="row g-2 align-items-end">
+    <div class="col-auto"><h3 class="m-0">Panel</h3></div>
 
-<canvas id="chart" height="120"></canvas>
+    <div class="col-auto">
+        <form method="get">
+            <input type="hidden" name="range" value="1h" />
+            <select name="deviceId" class="form-select form-select-sm" onchange="this.form.submit()">
+                @foreach (var d in Model.Devices)
+                {
+                    <option value="@d.Id" @(d.Id == devId ? "selected" : "")>@d.Name (@d.Zone)</option>
+                }
+            </select>
+        </form>
+    </div>
 
-<table class="table table-bordered">
-    <tr>
-        <th>Fecha</th>
-        <th>Potencia (W)</th>
-        <th>kWh Total</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.CreatedAt</td>
-            <td>@item.Watts</td>
-            <td>@item.KwhTotal</td>
-        </tr>
-    }
-</table>
+    <div class="col text-end">
+        <button type="button" class="btn btn-sm btn-outline-info" onclick="setRange('1h')">1h</button>
+        <button type="button" class="btn btn-sm btn-outline-info" onclick="setRange('24h')">24h</button>
+        <button type="button" class="btn btn-sm btn-outline-info" onclick="setRange('30d')">30d</button>
+    </div>
+</div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    var ctx = document.getElementById('chart').getContext('2d');
-    var chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.CreatedAt))),
-            datasets: [{
-                label: 'Consumo (W)',
-                data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.Watts))),
-                borderColor: 'rgba(54, 162, 235, 1)',
-                fill: false
-            }]
+<!-- Altura fija para que el gráfico se vea en dark theme -->
+<div class="card my-3 p-3" style="height:340px">
+    <canvas id="chart"></canvas>
+</div>
+
+<div class="row g-3">
+    <div class="col-md-8">
+        <div class="card p-3">
+            <h5>Lecturas recientes</h5>
+            <table class="table table-sm table-dark table-striped">
+                <thead>
+                    <tr><th>Fecha</th><th>W</th><th>kWh total</th></tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.LastReadings != null && Model.LastReadings.Any())
+                    {
+                        foreach (var r in Model.LastReadings)
+                        {
+                            <tr>
+                                <td>@r.CreatedAt.ToLocalTime()</td>
+                                <td>@r.Watts</td>
+                                <td>@r.KwhTotal</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3" class="text-muted">Sin lecturas en el rango seleccionado.</td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Alertas</h5>
+            <ul class="list-group list-group-flush">
+                @if (Model != null && Model.Alerts != null && Model.Alerts.Any())
+                {
+                    foreach (var a in Model.Alerts)
+                    {
+                        <li class="list-group-item bg-transparent text-light border-secondary">
+                            <b>@a.Kind:</b> @a.Message
+                            <small class="text-secondary">(@a.CreatedAt.ToLocalTime())</small>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <li class="list-group-item bg-transparent text-secondary border-secondary">
+                        Sin alertas.
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script>
+    // ===== Estado =====
+    const devId = @devId;                // inyectado del servidor
+    let currentRange = '24h';
+    let chartRef = null;
+    let refreshTimer = null;
+
+    // ===== Render =====
+    function renderChart(points){
+        const ctx = document.getElementById('chart').getContext('2d');
+
+        // destruir seguro
+        if (chartRef && typeof chartRef.destroy === 'function') chartRef.destroy();
+
+        // si no hay puntos, dibuja layout vacío para UX
+        if (!points || points.length === 0){
+            chartRef = new Chart(ctx, {
+                type: 'line',
+                data: { datasets: [] },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { x: { type:'time' }, y: { beginAtZero:true } },
+                    plugins: { legend: { display:false } }
+                }
+            });
+            return;
         }
-    });
-</script>
+
+        // sugerir Y max a partir de los datos
+        const maxY = Math.max.apply(null, points.map(p => p.y || 0));
+        const suggestedMax = isFinite(maxY) ? Math.ceil(maxY * 1.1) : 3000;
+
+        chartRef = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Consumo (W)',
+                    data: points.map(p => ({ x: new Date(p.t), y: p.y })),
+                    borderWidth: 2,
+                    borderColor: '#33D1FF',
+                    backgroundColor: 'rgba(51,209,255,0.15)',
+                    pointRadius: 0,
+                    pointHoverRadius: 3,
+                    tension: 0.25
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                parsing: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { type: 'time', time: { unit: currentRange === '1h' ? 'minute' : 'hour' } },
+                    y: { beginAtZero: true, suggestedMax: suggestedMax }
+                }
+            }
+        });
+    }
+
+    // ===== Carga de serie (polling) =====
+    function loadSeries(){
+        const cacheBuster = '&_=' + Date.now();  // evita caché
+        const url = '@Url.Action("Series","Dashboard")' + '?deviceId=' + devId + '&range=' + currentRange + cacheBuster;
+
+        fetch(url, { cache: 'no-store' })
+            .then(r => r.json())
+            .then(data => {
+                // console.log('puntos:', data.length);
+                renderChart(data);
+            })
+            .catch(err => console.error('loadSeries error:', err));
+    }
+
+    // ===== Cambiar rango =====
+    function setRange(range){
+        currentRange = range;
+        if (refreshTimer) clearInterval(refreshTimer);
+        loadSeries();                              // primera carga inmediata
+        refreshTimer = setInterval(loadSeries, 5000); // refresco cada 5 s
+    }
+
+    // Exponer SOLO el setter para los botones
+    window.setRange = setRange;
+
+    // ===== Inicio =====
+    setRange(currentRange);
+    </script>
+}

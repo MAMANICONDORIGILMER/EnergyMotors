@@ -1,17 +1,26 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Edit</title>
-</head>
-<body>
-    <div> 
+﻿@model EnergyMonitor.Models.Device
+@{ ViewBag.Title = "Editar dispositivo"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+<h3>@(Model.Id==0?"Nuevo dispositivo":"Editar dispositivo")</h3>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+    <div class="mb-2">
+        <label>Nombre</label>
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
     </div>
-</body>
-</html>
+    <div class="mb-2">
+        <label>Zona</label>
+        @Html.TextBoxFor(m => m.Zone, new { @class = "form-control" })
+    </div>
+    <div class="mb-2">
+        <label>Secreto (opcional)</label>
+        @Html.TextBoxFor(m => m.Secret, new { @class = "form-control" })
+    </div>
+    <div class="form-check mb-3">
+        @Html.CheckBoxFor(m => m.IsActive, new { @class = "form-check-input", id = "chk" })
+        <label for="chk" class="form-check-label">Activo</label>
+    </div>
+    <button class="btn btn-primary">Guardar</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Volver</a>
+}

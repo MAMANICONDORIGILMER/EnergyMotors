@@ -1,17 +1,25 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
+﻿@model IEnumerable<EnergyMonitor.Models.Alert>
+@{ ViewBag.Title = "Alertas"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+<h3>Alertas</h3>
+<table class="table table-sm table-dark table-striped">
+    <thead><tr><th>Fecha</th><th>Dispositivo</th><th>Tipo</th><th>Mensaje</th><th>OK</th></tr></thead>
+    <tbody>
+        @foreach (var a in Model)
+        {
+            <tr>
+                <td>@a.CreatedAt.ToLocalTime()</td>
+                <td>@a.Device?.Name</td>
+                <td>@a.Kind</td>
+                <td>@a.Message</td>
+                <td>
+                    @if (!a.Acknowledged)
+                    {
+                        <a class="btn btn-sm btn-success" href="@Url.Action("Ack","Alerts", new { id=a.Id })">✔</a>
+                    }
+                    else
+                    { <span class="text-success">✔</span>}
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

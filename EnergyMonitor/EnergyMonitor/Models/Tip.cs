@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace EnergyMonitor.Models
+﻿namespace EnergyMonitor.Models
 {
-    public class Tip : Controller
+    public class Tip
     {
-        // GET: Tip
-        public ActionResult Index()
-        {
-            return View();
-        }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Body { get; set; }
+        public string Tag { get; set; }
     }
 }

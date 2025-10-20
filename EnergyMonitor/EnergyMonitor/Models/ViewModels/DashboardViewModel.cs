@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Collections.Generic;
 
 namespace EnergyMonitor.Models.ViewModels
 {
-    public class DashboardViewModel : Controller
+    public class DashboardViewModel
     {
-        // GET: DashboardViewModel
-        public ActionResult Index()
-        {
-            return View();
-        }
+        public IEnumerable<Device> Devices { get; set; }
+        public IEnumerable<Reading> LastReadings { get; set; }
+        public IEnumerable<Alert> Alerts { get; set; }
+        public int? CurrentDeviceId { get; set; }
     }
 }

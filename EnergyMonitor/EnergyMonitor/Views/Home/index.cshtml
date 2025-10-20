@@ -1,17 +1,2 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>index</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
+﻿@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
+<script>location.href='@Url.Action("Index","Dashboard")'</script>

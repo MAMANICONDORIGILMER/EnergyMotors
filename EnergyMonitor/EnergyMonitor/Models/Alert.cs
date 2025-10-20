@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 
 namespace EnergyMonitor.Models
 {
-    public class Alert : Controller
+    public class Alert
     {
-        // GET: Alert
-        public ActionResult Index()
-        {
-            return View();
-        }
+        public long Id { get; set; }
+        public int DeviceId { get; set; }
+        public virtual Device Device { get; set; }
+
+        public string Kind { get; set; }      // OverThreshold, Peak, Info
+        public string Message { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public bool Acknowledged { get; set; } = false;
     }
 }
