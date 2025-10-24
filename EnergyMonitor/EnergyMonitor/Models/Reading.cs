@@ -6,10 +6,13 @@ namespace EnergyMonitor.Models
     {
         public long Id { get; set; }
         public int DeviceId { get; set; }
-        public virtual Device Device { get; set; }
-
-        public double Watts { get; set; }
-        public double? KwhTotal { get; set; }
+        public decimal? Watts { get; set; }
+        public decimal? Voltage { get; set; }
+        public decimal? Current { get; set; }
+        public decimal? KwhTotal { get; set; }
+        public string Source { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        public virtual Device Device { get; set; }
     }
 }

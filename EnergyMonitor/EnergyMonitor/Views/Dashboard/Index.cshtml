@@ -3,13 +3,15 @@
     ViewBag.Title = "Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
     var devId = Model.CurrentDeviceId ?? 0;
+    var qRange = Request["range"] ?? "1h";
 }
+
 <div class="row g-2 align-items-end">
     <div class="col-auto"><h3 class="m-0">Panel</h3></div>
 
     <div class="col-auto">
         <form method="get">
-            <input type="hidden" name="range" value="1h" />
+            <input type="hidden" name="range" value="@qRange" />
             <select name="deviceId" class="form-select form-select-sm" onchange="this.form.submit()">
                 @foreach (var d in Model.Devices)
                 {
@@ -20,13 +22,15 @@
     </div>
 
     <div class="col text-end">
-        <button type="button" class="btn btn-sm btn-outline-info" onclick="setRange('1h')">1h</button>
-        <button type="button" class="btn btn-sm btn-outline-info" onclick="setRange('24h')">24h</button>
-        <button type="button" class="btn btn-sm btn-outline-info" onclick="setRange('30d')">30d</button>
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-outline-info" id="btn1h" onclick="setRange('1h')">1h</button>
+            <button type="button" class="btn btn-outline-info" id="btn24h" onclick="setRange('24h')">24h</button>
+            <button type="button" class="btn btn-outline-info" id="btn30d" onclick="setRange('30d')">30d</button>
+        </div>
     </div>
 </div>
 
-<!-- Altura fija para que el gráfico se vea en dark theme -->
+<!-- Chart -->
 <div class="card my-3 p-3" style="height:340px">
     <canvas id="chart"></canvas>
 </div>
@@ -35,29 +39,12 @@
     <div class="col-md-8">
         <div class="card p-3">
             <h5>Lecturas recientes</h5>
-            <table class="table table-sm table-dark table-striped">
+            <table class="table table-sm table-dark table-striped" id="tblReadings">
                 <thead>
                     <tr><th>Fecha</th><th>W</th><th>kWh total</th></tr>
                 </thead>
-                <tbody>
-                    @if (Model != null && Model.LastReadings != null && Model.LastReadings.Any())
-                    {
-                        foreach (var r in Model.LastReadings)
-                        {
-                            <tr>
-                                <td>@r.CreatedAt.ToLocalTime()</td>
-                                <td>@r.Watts</td>
-                                <td>@r.KwhTotal</td>
-                            </tr>
-                        }
-                    }
-                    else
-                    {
-                        <tr>
-                            <td colspan="3" class="text-muted">Sin lecturas en el rango seleccionado.</td>
-                        </tr>
-                    }
-
+                <tbody id="tblBody">
+                    <tr><td colspan="3" class="text-muted">Cargando…</td></tr>
                 </tbody>
             </table>
         </div>
@@ -79,105 +66,189 @@
                 }
                 else
                 {
-                    <li class="list-group-item bg-transparent text-secondary border-secondary">
-                        Sin alertas.
-                    </li>
+                    <li class="list-group-item bg-transparent text-secondary border-secondary">Sin alertas.</li>
                 }
-
             </ul>
         </div>
     </div>
 </div>
 
 @section scripts{
+    <!-- Chart.js v4 + adapter de fechas -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
     <script>
-    // ===== Estado =====
-    const devId = @devId;                // inyectado del servidor
-    let currentRange = '24h';
-    let chartRef = null;
-    let refreshTimer = null;
+/* =======================
+   Estado
+======================= */
+const devId = @devId;
+let currentRange = '@(Request["range"] ?? "1h")';
+let chartRef = null, timer = null;
 
-    // ===== Render =====
-    function renderChart(points){
-        const ctx = document.getElementById('chart').getContext('2d');
+/* =======================
+   Utiles de fecha (ISO o /Date(...)/)
+======================= */
+function parseAnyDate(v){
+  if (!v) return null;
+  if (typeof v === 'string') {
+    // /Date(1698077812345)/
+    if (v.startsWith('/Date(')) {
+      const ms = parseInt(v.substring(6), 10);
+      return new Date(ms);
+    }
+    return new Date(v);
+  }
+  if (typeof v === 'number') return new Date(v);
+  return v; // Date
+}
+function fmtLocal(v){
+  const d = parseAnyDate(v);
+  return d ? d.toLocaleString() : '';
+}
 
-        // destruir seguro
-        if (chartRef && typeof chartRef.destroy === 'function') chartRef.destroy();
+/* =======================
+   Botones activos
+======================= */
+function setActiveButtons(){
+  ["btn1h","btn24h","btn30d"].forEach(id => document.getElementById(id)?.classList.remove("btn-info"));
+  if(currentRange==="1h")  document.getElementById("btn1h")?.classList.add("btn-info");
+  if(currentRange==="24h") document.getElementById("btn24h")?.classList.add("btn-info");
+  if(currentRange==="30d") document.getElementById("btn30d")?.classList.add("btn-info");
+}
 
-        // si no hay puntos, dibuja layout vacío para UX
-        if (!points || points.length === 0){
-            chartRef = new Chart(ctx, {
-                type: 'line',
-                data: { datasets: [] },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: { x: { type:'time' }, y: { beginAtZero:true } },
-                    plugins: { legend: { display:false } }
-                }
-            });
-            return;
+/* =======================
+   Render del Chart (a prueba de todo)
+======================= */
+function renderChart(points){
+  const ctx = document.getElementById('chart').getContext('2d');
+  if (chartRef?.destroy) chartRef.destroy();
+
+  // Normaliza por si el backend devuelve otros nombres (createdAt/watts/value/etc.)
+  const norm = (points || []).map(p => {
+    const t = p.t ?? p.createdAt ?? p.date ?? p.time;
+    const y = p.y ?? p.watts ?? p.w ?? p.value;
+    return { x: parseAnyDate(t), y: Number(y) || 0 };
+  }).filter(p => p.x instanceof Date && !isNaN(p.x.getTime()));
+
+  const maxY = norm.length ? Math.max(...norm.map(p => p.y)) : 0;
+
+  chartRef = new Chart(ctx, {
+    type: 'line',
+    data: {
+      // Cargamos puntos {x,y} directamente
+      datasets: [{
+        label: 'Consumo (W)',
+        data: norm,
+        borderWidth: 2,
+        borderColor: '#00e0a4',     // visible en tema oscuro
+        pointRadius: 0,
+        fill: false,
+        tension: 0.25
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      parsing: false,               // usamos {x,y} directamente
+      scales: {
+        x: {
+          type: 'time',
+          time: { unit: currentRange === '1h' ? 'minute' : 'hour' },
+          ticks: { color: '#9aa4b2' },     // legible en oscuro
+          grid:  { color: 'rgba(255,255,255,0.06)' }
+        },
+        y: {
+          beginAtZero: true,
+          suggestedMax: Math.ceil((maxY || 1) * 1.1),
+          ticks: { color: '#9aa4b2' },
+          grid:  { color: 'rgba(255,255,255,0.06)' }
         }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: { intersect: false, mode: 'index' }
+      }
+    }
+  });
+}
 
-        // sugerir Y max a partir de los datos
-        const maxY = Math.max.apply(null, points.map(p => p.y || 0));
-        const suggestedMax = isFinite(maxY) ? Math.ceil(maxY * 1.1) : 3000;
+/* =======================
+   Cargar serie (gráfico)
+======================= */
+async function loadSeries(){
+  try{
+    const url = '@Url.Action("Series","Dashboard")' + `?deviceId=${devId}&range=${encodeURIComponent(currentRange)}&_=${Date.now()}`;
+    const res = await fetch(url, { cache: 'no-store' });
+    const raw = await res.json();
+    // Esperamos [{ t: "...", y: 123 }] pero soportamos otros nombres.
+    renderChart(raw);
+  }catch(e){
+    console.error('Error cargando serie:', e);
+    renderChart([]); // evita que reviente el canvas
+  }
+}
 
-        chartRef = new Chart(ctx, {
-            type: 'line',
-            data: {
-                datasets: [{
-                    label: 'Consumo (W)',
-                    data: points.map(p => ({ x: new Date(p.t), y: p.y })),
-                    borderWidth: 2,
-                    borderColor: '#33D1FF',
-                    backgroundColor: 'rgba(51,209,255,0.15)',
-                    pointRadius: 0,
-                    pointHoverRadius: 3,
-                    tension: 0.25
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                parsing: false,
-                plugins: { legend: { display: false } },
-                scales: {
-                    x: { type: 'time', time: { unit: currentRange === '1h' ? 'minute' : 'hour' } },
-                    y: { beginAtZero: true, suggestedMax: suggestedMax }
-                }
-            }
-        });
+/* =======================
+   Cargar tabla
+======================= */
+async function loadTable(){
+  try{
+    const url = '@Url.Action("LastReadings","Dashboard")' + `?deviceId=${devId}&take=20&_=${Date.now()}`;
+    const res = await fetch(url, { cache: 'no-store' });
+    const rows = await res.json(); // [{t,w,k}] (flexible abajo)
+    const tbody = document.getElementById('tblBody');
+
+    if (!rows || rows.length === 0){
+      tbody.innerHTML = `<tr><td colspan="3" class="text-muted">Sin lecturas en el rango seleccionado.</td></tr>`;
+      return;
     }
 
-    // ===== Carga de serie (polling) =====
-    function loadSeries(){
-        const cacheBuster = '&_=' + Date.now();  // evita caché
-        const url = '@Url.Action("Series","Dashboard")' + '?deviceId=' + devId + '&range=' + currentRange + cacheBuster;
+    tbody.innerHTML = rows.map(r => {
+      const t = r.t ?? r.createdAt ?? r.date ?? r.time;
+      const w = r.w ?? r.watts ?? r.value ?? 0;
+      const k = r.k ?? r.kwh ?? r.kwhTotal ?? '';
+      return `<tr>
+        <td>${fmtLocal(t)}</td>
+        <td>${w ?? 0}</td>
+        <td>${k ?? ''}</td>
+      </tr>`;
+    }).join('');
+  }catch(e){
+    console.error('Error cargando tabla:', e);
+    document.getElementById('tblBody').innerHTML =
+      `<tr><td colspan="3" class="text-danger">Error cargando lecturas.</td></tr>`;
+  }
+}
 
-        fetch(url, { cache: 'no-store' })
-            .then(r => r.json())
-            .then(data => {
-                // console.log('puntos:', data.length);
-                renderChart(data);
-            })
-            .catch(err => console.error('loadSeries error:', err));
-    }
+/* =======================
+   Cambio de rango + polling
+======================= */
+function setRange(range){
+  currentRange = range || '1h';
+  setActiveButtons();
+  if (timer) clearInterval(timer);
 
-    // ===== Cambiar rango =====
-    function setRange(range){
-        currentRange = range;
-        if (refreshTimer) clearInterval(refreshTimer);
-        loadSeries();                              // primera carga inmediata
-        refreshTimer = setInterval(loadSeries, 5000); // refresco cada 5 s
-    }
+  Promise.all([loadSeries(), loadTable()]);
+  // cada 2s: puedes subir a 5–10s si no necesitas tanta frecuencia
+  timer = setInterval(() => { loadSeries(); loadTable(); }, 2000);
 
-    // Exponer SOLO el setter para los botones
-    window.setRange = setRange;
+  // conservar rango en <form> y en la URL
+  const hidden = document.querySelector('input[name="range"]');
+  if (hidden) hidden.value = currentRange;
+  const url = new URL(window.location);
+  url.searchParams.set("range", currentRange);
+  url.searchParams.set("deviceId", devId);
+  window.history.replaceState({}, "", url);
+}
+window.setRange = setRange;
 
-    // ===== Inicio =====
-    setRange(currentRange);
+// detener polling al salir
+window.addEventListener('beforeunload', () => timer && clearInterval(timer));
+
+/* =======================
+   Inicio
+======================= */
+setRange(currentRange || '1h');
     </script>
 }

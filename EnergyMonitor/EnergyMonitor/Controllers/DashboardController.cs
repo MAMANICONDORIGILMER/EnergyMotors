@@ -68,6 +68,23 @@ namespace EnergyMonitor.Controllers
             return Content(Newtonsoft.Json.JsonConvert.SerializeObject(points), "application/json");
         }
 
+        [HttpGet]
+        public ActionResult LastReadings(int deviceId, int take = 20)
+        {
+            using (var db = new EnergyDbContext())
+            {
+                var data = db.Readings
+                    .Where(r => r.DeviceId == deviceId)
+                    .OrderByDescending(r => r.CreatedAt)
+                    .Take(take)
+                    .Select(r => new { t = r.CreatedAt, w = r.Watts, k = r.KwhTotal })
+                    .ToList()
+                    .OrderBy(x => x.t); // asc para lectura humana
+                return Json(data, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+
 
     }
 }

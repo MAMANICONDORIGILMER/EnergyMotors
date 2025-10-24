@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|c:\\users\\anton\\onedrive\\documentos\\github\\energymotors\\energymonitor\\energymonitor\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -11,20 +11,72 @@
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|c:\\users\\anton\\onedrive\\documentos\\github\\energymotors\\energymonitor\\energymonitor\\content\\js\\chart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\content\\js\\chart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\controllers\\simulatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\controllers\\simulatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\dto\\readingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\dto\\readingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\reading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\reading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\views\\alerts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\views\\alerts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\energydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\energydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\threshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\threshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\controllers\\simulatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\controllers\\simulatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\controllers\\ingestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\controllers\\ingestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79578E37-B01D-4289-BF5A-CAE2B4EB62BA}|EnergyMonitor.Agent\\EnergyMonitor.Agent.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor.agent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79578E37-B01D-4289-BF5A-CAE2B4EB62BA}|EnergyMonitor.Agent\\EnergyMonitor.Agent.csproj|solutionrelative:energymonitor.agent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\views\\device\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -33,14 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\controllers\\ingestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\controllers\\ingestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -57,18 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\tip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\tip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\threshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\threshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\reading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\reading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\energydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\models\\energydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,20 +123,12 @@
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\views\\device\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\views\\device\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\energymonitor\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14757240-AEF2-4646-8818-0D5CB346C967}|EnergyMonitor\\EnergyMonitor.csproj|solutionrelative:energymonitor\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,8 +138,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "chart.js",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Content\\js\\chart.js",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Content\\js\\chart.js",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Content\\js\\chart.js",
+              "RelativeToolTip": "EnergyMonitor\\Content\\js\\chart.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-23T17:30:21.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Threshold.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Threshold.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Threshold.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Threshold.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\Threshold.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:52:07.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnergyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\EnergyDbContext.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\EnergyDbContext.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\EnergyDbContext.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\EnergyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T13:56:08.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Global.asax.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Global.asax.cs",
+              "RelativeToolTip": "EnergyMonitor\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T21:10:17.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Alerts\\Index.cshtml",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Alerts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Alerts\\Index.cshtml",
+              "RelativeToolTip": "EnergyMonitor\\Views\\Alerts\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T21:03:24.201Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -124,71 +213,34 @@
               "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Dashboard\\Index.cshtml",
               "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "EnergyMonitor\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAADoAAAAAAAAAAAAawEsAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAkwEUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-25T21:02:33.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "EnergyMonitor\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T14:24:56.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Reading.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Reading.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Reading.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Reading.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\Reading.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:54:09.156Z"
+              "WhenOpened": "2025-09-25T20:51:56.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IngestController.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\IngestController.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\IngestController.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\IngestController.cs",
-              "RelativeToolTip": "EnergyMonitor\\Controllers\\IngestController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAUAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ReadingDto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\DTO\\ReadingDto.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\DTO\\ReadingDto.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\DTO\\ReadingDto.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\DTO\\ReadingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:51:08.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Web.config",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Web.config",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Web.config",
-              "RelativeToolTip": "EnergyMonitor\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-20T14:49:46.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "EnergyMonitor\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:50:08.162Z"
+              "WhenOpened": "2025-10-23T15:22:45.435Z"
             },
             {
               "$type": "Document",
@@ -205,191 +257,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "EnergyMonitor\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:50:08.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "EnergyMonitor\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:20:02.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "EnergyMonitor\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T16:06:25.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "EnergyMonitor\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T16:07:06.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "SimulatorController.cs",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\SimulatorController.cs",
               "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\SimulatorController.cs",
               "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\SimulatorController.cs",
               "RelativeToolTip": "EnergyMonitor\\Controllers\\SimulatorController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAA1wB4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwB4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T16:08:31.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Device\\Index.cshtml",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Device\\Index.cshtml",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Device\\Index.cshtml",
-              "RelativeToolTip": "EnergyMonitor\\Views\\Device\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T21:02:23.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Alerts\\Index.cshtml",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Alerts\\Index.cshtml",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Alerts\\Index.cshtml",
-              "RelativeToolTip": "EnergyMonitor\\Views\\Alerts\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T21:03:24.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T21:04:16.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "web.config",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\web.config",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\web.config",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\web.config",
-              "RelativeToolTip": "EnergyMonitor\\Views\\web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-20T14:31:44.582Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Tip.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Tip.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Tip.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Tip.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\Tip.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:52:29.621Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ReadingChartViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:54:19.898Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Threshold.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Threshold.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Threshold.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Threshold.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\Threshold.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "IngestController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\IngestController.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\IngestController.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\IngestController.cs",
+              "RelativeToolTip": "EnergyMonitor\\Controllers\\IngestController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:52:07.808Z"
+              "WhenOpened": "2025-09-25T20:51:08.457Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Reading.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Reading.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Reading.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Reading.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\Reading.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:51:56.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EnergyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\EnergyDbContext.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\EnergyDbContext.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\EnergyDbContext.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\EnergyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T13:56:08.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Device.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Device.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Device.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Device.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\Device.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:51:43.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Alert.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Alert.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Alert.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Alert.cs",
-              "RelativeToolTip": "EnergyMonitor\\Models\\Alert.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:52:18.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DeviceController.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DeviceController.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\DeviceController.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DeviceController.cs",
-              "RelativeToolTip": "EnergyMonitor\\Controllers\\DeviceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:50:56.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AlertsController.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AlertsController.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\AlertsController.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AlertsController.cs",
-              "RelativeToolTip": "EnergyMonitor\\Controllers\\AlertsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:51:19.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "EnergyMonitor\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:51:30.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "EnergyMonitor\\App_Start\\RouteConfig.cs",
@@ -401,7 +341,176 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor.Agent\\Program.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor.Agent\\Program.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor.Agent\\Program.cs",
+              "RelativeToolTip": "EnergyMonitor.Agent\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:25:58.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "EnergyMonitor\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T14:24:56.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\ViewModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:54:09.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Web.config",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Web.config",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Web.config",
+              "RelativeToolTip": "EnergyMonitor\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-20T14:49:46.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Device\\Index.cshtml",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Device\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Device\\Index.cshtml",
+              "RelativeToolTip": "EnergyMonitor\\Views\\Device\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T21:02:23.575Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EnergyMonitor\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T21:04:16.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\web.config",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Views\\web.config",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\web.config",
+              "RelativeToolTip": "EnergyMonitor\\Views\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-20T14:31:44.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Tip.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Tip.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Tip.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Tip.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\Tip.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:52:29.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ReadingChartViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\ViewModels\\ReadingChartViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:54:19.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Device.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Device.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Device.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\Device.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:51:43.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Alert.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Alert.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Models\\Alert.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Models\\Alert.cs",
+              "RelativeToolTip": "EnergyMonitor\\Models\\Alert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:52:18.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DeviceController.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\DeviceController.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\DeviceController.cs",
+              "RelativeToolTip": "EnergyMonitor\\Controllers\\DeviceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:50:56.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AlertsController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AlertsController.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\AlertsController.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AlertsController.cs",
+              "RelativeToolTip": "EnergyMonitor\\Controllers\\AlertsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:51:19.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "EnergyMonitor\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "EnergyMonitor\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:51:30.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Views\\Device\\Edit.cshtml",
               "RelativeDocumentMoniker": "EnergyMonitor\\Views\\Device\\Edit.cshtml",
@@ -413,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "Model1.cs",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Model1.cs",
               "RelativeDocumentMoniker": "EnergyMonitor\\Model1.cs",
@@ -422,18 +531,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T14:03:49.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Global.asax.cs",
-              "RelativeDocumentMoniker": "EnergyMonitor\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\EnergyMotors\\EnergyMonitor\\EnergyMonitor\\Global.asax.cs",
-              "RelativeToolTip": "EnergyMonitor\\Global.asax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:10:17.101Z"
             }
           ]
         }
